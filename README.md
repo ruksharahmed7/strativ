@@ -2,6 +2,8 @@
 
 ## Weather Forecasting API
 
+Model creation experimentation is done in Google colab with no additional library installed. A copy of the notebook is uploaded in this [repo](https://github.com/ruksharahmed7/strativ/blob/main/Weather_Forecast/weather_forecast.ipynb).
+
 ### Data Collection
 
 **Data Source**: [open-meteo.com](https://open-meteo.com/en/docs)
@@ -65,3 +67,24 @@ The csv data being loaded in a pandas *df* variable, a quick check using *.info(
 ![test data](https://github.com/ruksharahmed7/strativ/blob/main/images/test_data.png)
 
 - The model and the scaling info is saved to be later used in FastAPI app.
+
+## FastAPI App
+
+### Environment Setup
+
+We're going to use Python 3.10 for our conda-based virtual environment. We're choosing Python 3.10 because it was the Python version in the colab environment.
+
+The command 
+
+```conda create -n strativ python=3.10```
+
+creates a new conda environment named *strativ*.
+
+The command
+
+```conda activate strativ```
+
+activates the environment.
+
+The necessary libraries are installed in the environment using a requirements.txt file.
+
