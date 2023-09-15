@@ -52,4 +52,16 @@ The csv data being loaded in a pandas *df* variable, a quick check using *.info(
 ![model summary](https://github.com/ruksharahmed7/strativ/blob/main/images/model_summary.png)
 
 
-- The model is trained for 50 epochs recording training and validation loss. 
+- The model is trained for 50 epochs recording training and validation loss. From the graph below, we can see that the model's training and validation loss are decreasing and reach an approximate plateau.
+
+![val loss](https://github.com/ruksharahmed7/strativ/blob/main/images/val_loss.png)
+
+- From the image below, we can say the model at least fits the training data well.
+
+![train fit](https://github.com/ruksharahmed7/strativ/blob/main/images/train_data.png)
+
+- We can also see the model's prediction for the test data and its comparison with the actual test data. The green line is the predicted test data here.
+
+![test data](https://github.com/ruksharahmed7/strativ/blob/main/images/test_data.png)
+
+- The model and the scaling info is saved to be later used in FastAPI app.
