@@ -66,7 +66,9 @@ The csv data being loaded in a pandas *df* variable, a quick check using *.info(
 
 ![test data](https://github.com/ruksharahmed7/strativ/blob/main/images/test_data.png)
 
-- The model and the scaling info is saved to be later used in FastAPI app.
+- The training and test root mean squared error(RMSE) are 787.27 and 975.97 respectively.
+
+- The model and the scaling info are saved to be later used in FastAPI app.
 
 ## FastAPI App
 
@@ -87,4 +89,10 @@ The command
 activates the environment.
 
 The necessary libraries are installed in the environment using a requirements.txt file.
+
+The command
+
+```pip install -r requirements.txt```
+
+installs the libraries in the environment
 
