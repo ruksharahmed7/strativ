@@ -41,3 +41,15 @@ The csv data being loaded in a pandas *df* variable, a quick check using *.info(
 
 ### Data Processing
 
+- For training and testing, we keep the last 7 days of the data (from 2023-09-01 to 2023-09-07) for testing.
+- We normalize the temperature data using *MinMaxScaler* from *sklearn.preprocessing*.
+- We use *Keras* library's TimeSeriesGenerator to generate data in sequences. The sequence length is 7 to account for weekly cycles. We can also choose 30 and 365 to account for monthly and yearly changes respectively.
+
+### Model Building
+
+- We build a simple model using 2 *LSTM* layers and 1 hidden *Dense* layer. We use *mean_absolute_error* as the loss function and *adam* as the optimizer. We got the idea of this model from [this code](https://github.com/bnsreenu/python_for_microscopists/blob/master/166b_COVID_forecasting_using_LSTM.py).
+
+![model summary](https://github.com/ruksharahmed7/strativ/blob/main/images/1.png)
+
+
+- 
